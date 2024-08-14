@@ -20,14 +20,14 @@ export default function Hero(props: { className?: string | undefined }) {
           <LinkComponent
             to="/"
             label="Get Started"
-            className="!text-white rounded-lg !bg-lms-green w-60 flex flex-row items-center justify-center px-4 py-4 box-border text-base"
+            className="text-white rounded-lg bg-lms-green w-60 flex flex-row items-center justify-center px-4 py-4 box-border text-base hover:text-black hover:brightness-150"
           />
         </div>
       </div>
 
       <div className=" w-full h-full absolute top-20 bottom-0 left-0 right0  ">
         <Image
-          src="/h70 (16).png"
+          src="/h71.png"
           // layout="fill"
           width="1280"
           height="1280"
