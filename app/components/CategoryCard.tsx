@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CategoryCard() {
   return (
-    <div className="w-1/8 h-60 w-44 rounded-2xl shadow  bg-white hover:brightness-95">
+    <div className="w-[70px] h-20 md:w-[14%] md:h-44 rounded md:rounded-lg shadow  bg-white hover:brightness-95">
       <Link href="/courses/">
         <div className="image w-full h-1/2">
           <Image
@@ -14,12 +14,16 @@ export default function CategoryCard() {
             height="400"
             objectFit="cover"
             alt="Category name"
-            className="w-full h-full border-none rounded-t-2xl "
+            className="w-full h-full border-none rounded md:rounded-t-2xl "
           />
         </div>
-        <div className="details flex flex-col justify-center items-center w-full h-1/2 p-4 gap-2 text-neutral-600">
-          <p className="text-xl font-medium leading-p">Engineering</p>
-          <p className="text-base font-normal leading-normal">100 Courses</p>
+        <div className="details flex flex-col justify-center items-center w-full h-1/2 p-0 md:p-4 gap-1 md:gap-2 text-neutral-600">
+          <p className="text-[10px] text-nowrap md:text-base  font-medium md:leading-p">
+            Engineering
+          </p>
+          <p className="text-[8px] text-nowrap md:text-xs font-normal md:leading-normal">
+            100 Courses
+          </p>
         </div>
       </Link>
     </div>

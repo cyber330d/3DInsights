@@ -1,8 +1,8 @@
 import { Search } from "lucide-react";
 
-export default function SearchBar() {
+export default function SearchBar(props: { className?: string | undefined }) {
   return (
-    <div className="flex items-center justify-center px-4 py-2 rounded-lg gap-2 shadow min-w-5 focus-within:ring-lms-green  focus-within:ring-1 ">
+    <div className={`flex items-center justify-between px-1.5 py-2 rounded-lg gap-2 shadow focus-within:ring-lms-green  focus-within:ring-1 ${props.className}`} >
       <label htmlFor="search">
         <Search className="" />
       </label>
@@ -11,7 +11,7 @@ export default function SearchBar() {
         name="search"
         id="search"
         placeholder="Search..."
-        className=" bg-transparent outline-none"
+        className=" bg-transparent outline-none self-stretch"
       />
     </div>
   );

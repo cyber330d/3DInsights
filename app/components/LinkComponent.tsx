@@ -13,7 +13,8 @@ export default function LinkComponent(
 ) {
   return (
     <div
-      className={`flex items-center justify-center py-2  mx-3 border-b-[2px] hover:text-lms-green transition border-transparent hover:border-lms-green  ${className}`}
+      className={`flex items-center justify-center border-b-[2px] py-2 hover:text-lms-green transition border-transparent hover:border-lms-green  ${className}`}
+    // mx-3 
     >
       <Link href={to}> {label}</Link>
       {children}

@@ -2,9 +2,9 @@ import Image from "next/image";
 import LinkComponent from "./LinkComponent";
 import Link from "next/link";
 
-export default function CourseCard() {
+export default function TestimonialCard() {
   return (
-    <div className="w-1/5  rounded-2xl shadow flex flex-col gap-4 bg-white hover:brightness-95 p-8">
+    <div className="rounded-lg shadow w-60 h-72 bg-white flex flex-col gap-4 hover:brightness-95 p-8 ">
       <div className="image w-full flex items-center justify-between">
         <div className="image w-12 h-12 flex items-center justify-center">
           <Image
@@ -16,7 +16,7 @@ export default function CourseCard() {
             className="w-full h-full border-none  rounded-full"
           />
         </div>
-        <p className="name text-base">Derek lactovokta</p>
+        <p className=" name text-base">Derek lactovokta</p>
       </div>
 
       <p className="text-xs">

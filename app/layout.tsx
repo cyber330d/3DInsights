@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-green-50 transition-all ${inter.className}`}>
+      <body className={`bg-green-50 w-full transition-all ${inter.className}`}>
         <Header />
         <main className="min-h-screen w-full">
           {children}
