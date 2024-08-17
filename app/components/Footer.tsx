@@ -6,23 +6,17 @@ import LinkComponent from "./LinkComponent";
 export default function Footer() {
   return (
     <footer className="min-h-[35vh] p-4 md:p-12 flex-col w-full text-xs">
-      <div className="flex flex-wrap justify-between items-start gap-4 w-full">
+      <div className="flex flex-wrap justify-between max-sm:flex-col items-start gap-4 w-full">
         <div className="flex flex-col items-start justify-start self-stretch md:-mx-2 gap-5 pt-8">
           <h3 className="flex items-start  text-base leading-5 font-semibold !bg-clip-text ">
             Organization
           </h3>
-          <div className="flex flex-col justify-start self-stretch text-xs font-semibold gap-5 ">
+          <div className="flex flex-col justify-start self-stretch text-xs font-medium  gap-5 ">
             <Link
               href="#"
               className=" hover:text-lms-green transition leading-4"
             >
-              Schools
-            </Link>
-            <Link
-              href="#"
-              className=" hover:text-lms-green transition leading-4"
-            >
-              Groups
+              Academy
             </Link>
             <Link
               href="#"
@@ -34,7 +28,19 @@ export default function Footer() {
               href="#"
               className=" hover:text-lms-green transition leading-4"
             >
-              Help Center
+              Groups
+            </Link>
+            <Link
+              href="#"
+              className=" hover:text-lms-green transition leading-4"
+            >
+              Organizations
+            </Link>
+            <Link
+              href="#"
+              className=" hover:text-lms-green transition leading-4"
+            >
+              Developers
             </Link>
           </div>
         </div>
@@ -43,7 +49,7 @@ export default function Footer() {
           <h3 className="flex items-start  text-base leading-5 font-semibold !bg-clip-text ">
             Explore
           </h3>
-          <div className="flex flex-col justify-start self-stretch text-xs font-semibold gap-5 ">
+          <div className="flex flex-col justify-start self-stretch text-xs font-medium gap-5 ">
             <Link
               href="#"
               className=" hover:text-lms-green transition leading-4"
@@ -72,7 +78,7 @@ export default function Footer() {
               href="#"
               className=" hover:text-lms-green transition leading-4"
             >
-              Sign UP
+              Sign Up
             </Link>
           </div>
         </div>
@@ -110,7 +116,7 @@ export default function Footer() {
               href="#"
               className=" hover:text-lms-green transition leading-4"
             >
-              Link
+              Contact Us
             </Link>
           </div>
         </div>
@@ -119,7 +125,7 @@ export default function Footer() {
           <h3 className="flex items-start  text-base leading-5 font-semibold !bg-clip-text ">
             Support
           </h3>
-          <div className="flex flex-col justify-start self-stretch text-xs font-semibold gap-5 ">
+          <div className="flex flex-col justify-start self-stretch text-xs font-medium gap-5 ">
             <Link
               href="#"
               className=" hover:text-lms-green transition leading-4"
@@ -130,7 +136,13 @@ export default function Footer() {
               href="#"
               className=" hover:text-lms-green transition leading-4"
             >
-              Help center FAQ
+              FAQ
+            </Link>
+            <Link
+              href="#"
+              className=" hover:text-lms-green transition leading-4"
+            >
+              Help Center
             </Link>
             <Link
               href="#"
@@ -138,12 +150,7 @@ export default function Footer() {
             >
               Documentation
             </Link>
-            <Link
-              href="#"
-              className=" hover:text-lms-green transition leading-4"
-            >
-              Developers
-            </Link>
+
             <Link
               href="#"
               className=" hover:text-lms-green transition leading-4"
@@ -157,7 +164,7 @@ export default function Footer() {
           <div className="flex items-center justify-center w-full">
             <Logo className="" />
           </div>
-          <div className="flex flex-col justify-start self-stretch text-xs font-semibold gap-5 ">
+          <div className="flex flex-col justify-start self-stretch text-xs font-medium gap-5 ">
             <div className="flex flex-col gap-3">
               <p className="flex gap-2">
                 <MailIcon /> cyber330d@gmail.com
@@ -208,12 +215,12 @@ export default function Footer() {
       </div>
 
       <div className=" border-lms-green border-t-4 py-8 self-center flex-col sm:flex-row gap-6 w-full flex items-center justify-between box-border">
-        <div className="text-lms-green text-xs  sm:text-base text-no-wrap drop-shadow">
+        <p className="flex items-start font-medium justify-center  self-stretch text-balance text-xs leading-tight tracking-tighter text-lms-green sm:text-sm text-no-wrap ">
           © 2024 3dinsights Development Team
-        </div>
+        </p>
 
         <div className="flex flex-col gap-4">
-          <h3 className="w-full font-bold flex items-center justify-center text-balance text-xs leading-tight tracking-tighter text-lms-green drop-shadow-sm">
+          <h3 className="w-full font-medium flex items-center justify-center text-balance text-xs leading-tight tracking-tighter text-lms-green ">
             FOLLOW US
           </h3>
           <div className="flex items-center justify-center gap-4 text-white">

@@ -8,7 +8,7 @@ export default function Featured() {
       <div className="flex flex-col items-center justify-center gap-s sm:gap-4 text-xl  leading-10  ">
         <h2 className="">Featured Courses</h2>
         <p className="text-sm text-center font-normal leading-normal text-neutral-700">
-          Explore our most popular and relevant courses. Lorem ipsum dolor, sit
+          Explore our most popular and relevant courses.
         </p>
       </div>
       <div className=" course-container flex items-center justify-center flex-wrap gap-4">

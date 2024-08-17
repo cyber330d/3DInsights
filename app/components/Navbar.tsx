@@ -25,7 +25,7 @@ export default function Navbar(props: { className?: string | undefined }) {
 
         {/* links container */}
         <div
-          className={`flex-col md:flex md:flex-row absolute md:static rounded-lg top-16 pl-16 pr-8 pb-12 md:pr-0 md:pb-0 md:pl-0 min-h-max left-0 w-[65vw] min-[560px]:w-[50vw] md:w-fit bottom-0 items-start md:items-center md:rounded-lg justify-start gap-4 lg:gap-10 text-left !bg-white text-black ${
+          className={`flex-col md:flex md:flex-row absolute md:static rounded-lg top-16 pl-16 pr-8 pb-12 md:pr-0 md:pb-0 md:pl-0 min-h-max left-0 w-[65vw] min-[560px]:w-[50vw] md:w-fit bottom-0 items-start md:items-center md:rounded-lg justify-start gap-4 lg:gap-10 text-left text-base !bg-white text-neutral-700 ${
             isVisible ? "flex !bg-white" : "hidden"
           }`}
         >
@@ -64,7 +64,7 @@ export default function Navbar(props: { className?: string | undefined }) {
           <LinkComponent
             to="/login"
             label="Sign in"
-            className="!text-white rounded-lg bg-lms-green w-20 ml-4 md:ml-0 flex flex-row items-center justify-center p-0.5 box-border text-base md:p-1"
+            className="!text-white rounded-lg bg-lms-green w-20 ml-4 md:ml-0 flex flex-row items-center justify-center p-0.5 box-border text-sm md:p-1"
           />
           {isVisible ? (
             <X
