@@ -224,10 +224,21 @@ export default function Footer() {
             FOLLOW US
           </h3>
           <div className="flex items-center justify-center gap-4 text-white">
-            <Linkedin className=" bg-[#0A66C2]  fill-white rounded-sm p-1" />
-            <Twitter className="text-black  fill-white " />
-            <Facebook className="bg-[#0866ff]  fill-white rounded-full pt-1" />
-            <Instagram className="text-[#E4405F]  fill-white" />
+            <Link href="www.linkedin.com/in/erasmus-e-obeth" className="">
+              <Linkedin className=" bg-[#0A66C2]  fill-white rounded-sm p-1" />
+            </Link>
+            <Link href="https://github.com/cyber330d" className="">
+              <Twitter className="text-black  fill-white " />
+            </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=100064762728692"
+              className=""
+            >
+              <Facebook className="bg-[#0866ff]  fill-white rounded-full pt-1" />
+            </Link>
+            <Link href="https://www.facebook.com/erasmus.eobeth/" className="">
+              <Instagram className="text-[#E4405F]  fill-white" />
+            </Link>
           </div>
         </div>
       </div>
