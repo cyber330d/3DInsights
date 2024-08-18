@@ -79,7 +79,7 @@ export default function Page() {
        <h2 className="font-medium text-xl not-italic leading-9">
          Create account
        </h2>
-       <div className="font-normal text-sm not-italic text-neutral-700 leading-6">
+       <div className="font-normal text-sm not-italic leading-6">
          Get started with Teaching or Learning!
        </div>
      </div>

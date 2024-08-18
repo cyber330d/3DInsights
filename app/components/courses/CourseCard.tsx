@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LinkComponent from "./LinkComponent";
+import LinkComponent from "@/app/components/LinkComponent";
 import Link from "next/link";
 
 export default function CourseCard() {

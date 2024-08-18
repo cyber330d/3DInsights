@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CourseCard from "./CourseCard";
 import { Book, GraduationCap, UsersRound } from "lucide-react";
 
 export default function WhyChooseUS() {

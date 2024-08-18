@@ -64,7 +64,7 @@ export default function Navbar(props: { className?: string | undefined }) {
           <LinkComponent
             to="/login"
             label="Sign in"
-            className="!text-white rounded-lg bg-lms-green w-20 ml-4 md:ml-0 flex flex-row items-center justify-center p-0.5 box-border text-sm md:p-1"
+            className="!text-white rounded-lg bg-lms-green hover:bg-green-400 w-20 ml-4 md:ml-0 flex flex-row items-center justify-center p-0.5 box-border text-sm md:p-1"
           />
           {isVisible ? (
             <X

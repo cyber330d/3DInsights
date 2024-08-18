@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CourseCard from "./CourseCard";
+import CourseCard from "./courses/CourseCard";
 import LinkComponent from "./LinkComponent";
 
 export default function Featured() {
@@ -11,16 +11,17 @@ export default function Featured() {
           Explore our most popular and relevant courses.
         </p>
       </div>
-      <div className=" course-container flex items-center justify-center flex-wrap gap-4">
+      {/* <div className=" course-container flex items-center justify-center flex-wrap gap-4"> */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <CourseCard />
         <CourseCard />
         <CourseCard />
         <CourseCard />
-        <div className="flex items-center justify-center p-3 w-full">
+        <div className="flex items-center justify-center col-span-full p-3 w-full">
           <LinkComponent
             to="/courses"
             label="Explore More "
-            className="!text-lms-green rounded-lg hover:border-transparent hover:bg-white ring-lms-green ring-1 w-60 flex flex-row items-center justify-center px-4 py-2 box-border text-base"
+            className="text-lms-green rounded-lg hover:border-transparent hover:text-white hover:bg-green-400  ring-lms-green ring-1 w-60 flex flex-row items-center justify-center px-4 py-2 box-border text-base"
           />
         </div>
       </div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CourseCard from "./CourseCard";
 import LinkComponent from "./LinkComponent";
 import TestimonialCard from "./TestimonialCard";
 
