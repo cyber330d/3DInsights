@@ -23,7 +23,7 @@ export default function TeachOrLearn() {
             Insights. We provide the tools and skills to teach what you love.
           </p>
           <LinkComponent
-            to="/"
+            to="/register"
             label="Start Your Journey"
             className="ring-1 ring-lms-green hover:bg-green-400 rounded-lg  text-neutral-700  md:px-4 md:py-2 mx-0 font-normal md:leading-5 text-[10px] px-2 py-0.5 text-center md:text-sm"
           />
@@ -39,7 +39,7 @@ export default function TeachOrLearn() {
             their fields, and enriching their lives.
           </p>
           <LinkComponent
-            to="/"
+            to="/register"
             label="Start Learning Now"
             className="ring-1 ring-lms-green hover:bg-green-400 text-neutral-700 rounded-lg md:px-4 md:py-2 mx-0 font-normal md:leading-5 text-[10px] px-2 py-0.5 text-center md:text-sm"
           />

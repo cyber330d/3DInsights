@@ -1,6 +1,17 @@
 // /data/db.ts
 export const courses = [
   {
+    id: "5",
+    name: "Introduction to Electronics",
+    description: "Fundamentals of electronics and electronic components.",
+    level: "Beginner",
+    duration: "12 hours",
+    category: "Electronics",
+    tags: ["Electronics", "Components"],
+    price: "free",
+    image: "/h90.jpeg",
+  },
+  {
     id: "1",
     name: "Introduction to 3D Modeling",
     description: "Learn the basics of 3D modeling using Blender.",
@@ -8,19 +19,19 @@ export const courses = [
     duration: "10 hours",
     category: "3D Modeling",
     tags: ["3D", "Modeling", "Blender"],
-        price: 49.3,
-        image: "/h75.jpeg",
+    price: 20000,
+    image: "/h72.jpeg",
   },
   {
     id: "2",
-    name: "Advanced JavaScript",
-    description: "Deep dive into advanced concepts of JavaScript.",
+    name: "Biology 101",
+    description: "Study ofin living organisms.",
     level: "Advanced",
     duration: "20 hours",
-    category: "Programming",
-    tags: ["JavaScript", "Web Development"],
-    price: 79.99,
-    image: "/h13.jpeg",
+    category: "Biology",
+    tags: ["biology", "life"],
+    price: "free",
+    image: "/h91.jpeg",
   },
   {
     id: "3",
@@ -30,9 +41,10 @@ export const courses = [
     duration: "15 hours",
     category: "Engineering",
     tags: ["Electrical Engineering", "Circuits"],
-    price: 59.99,
-    image: "/h21.jpeg",
+    price: 5000,
+    image: "/h89.jpeg",
   },
+
   {
     id: "4",
     name: "Machine Learning Basics",
@@ -44,17 +56,7 @@ export const courses = [
     price: 99.99,
     image: "/h23.jpeg",
   },
-  {
-    id: "5",
-    name: "Introduction to Electronics",
-    description: "Fundamentals of electronics and electronic components.",
-    level: "Beginner",
-    duration: "12 hours",
-    category: "Electronics",
-    tags: ["Electronics", "Components"],
-    price: 54.99,
-    image: "/h70.png",
-  },
+
   {
     id: "6",
     name: "Biology 101",

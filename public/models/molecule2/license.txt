@@ -1,0 +1,11 @@
+Model Information:
+* title:	Modèle cœur
+* source:	https://sketchfab.com/3d-models/modele-cur-a10478aec11d46bdabeb63b0c602b955
+* author:	Tavernier Amaury (https://sketchfab.com/svtavernier)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Modèle cœur" (https://sketchfab.com/3d-models/modele-cur-a10478aec11d46bdabeb63b0c602b955) by Tavernier Amaury (https://sketchfab.com/svtavernier) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

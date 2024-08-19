@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "title": "Course Title 1",
+    "description": "This is a description for course 1.",
+    "image": "/about2.jpeg",
+    "level": "Beginner",
+    "category": "Programming",
+    "tags": ["JavaScript", "React"],
+    "duration": "4 weeks",
+    "instructors": [
+      {
+        "name": "Instructor 1",
+        "bio": "This is a bio for Instructor 1.",
+        "image": "/instructor.png"
+      }
+    ],
+    "startTime": "2024-09-01T00:00:00Z",
+    "deadline": "2024-12-01T00:00:00Z",
+    "overview": "Course overview goes here.",
+    "summary": "Course summary goes here.",
+    "courseOutline": [
+      {
+        "week": 1,
+        "topic": "Introduction to Programming"
+      }
+    ],
+    "learningOutcomes": [
+      "Understand programming basics",
+      "Write simple programs"
+    ],
+    "assessments": ["Quiz 1", "Final Exam"]
+  },
+  {
+    "id": 2,
+    "title": "Course Title 2",
+    "description": "This is a description for course 2.",
+    "image": "/about2.jpeg",
+    "level": "Intermediate",
+    "category": "Data Science",
+    "tags": ["Python", "Data Analysis"],
+    "duration": "6 weeks",
+    "instructors": [
+      {
+        "name": "Instructor 2",
+        "bio": "This is a bio for Instructor 2.",
+        "image": "/student.png"
+      }
+    ],
+    "startTime": "2024-10-01T00:00:00Z",
+    "deadline": "2024-12-15T00:00:00Z",
+    "overview": "Course overview goes here.",
+    "summary": "Course summary goes here.",
+    "courseOutline": [
+      {
+        "week": 1,
+        "topic": "Data Science Introduction"
+      }
+    ],
+    "learningOutcomes": ["Analyze data", "Create data visualizations"],
+    "assessments": ["Project 1", "Final Exam"]
+  }
+]

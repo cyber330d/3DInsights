@@ -5,9 +5,9 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex p-8 pt-16 flex-col justify-center items-center h-screen w-full">
-        {/* form container */}
-        {children}
+    <div className="flex p-8  flex-col justify-center items-center h-screen w-full scroll-smooth bg-green-50">
+      {/* form container */}
+      {children}
     </div>
   );
 }
