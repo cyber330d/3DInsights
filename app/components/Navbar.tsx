@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation"; // Import usePathname
 import Logo from "./Logo";
 import LinkComponent from "./LinkComponent";
 import SearchBar from "./SearchBar";
-import { Search, Menu, X } from "lucide-react";
+import { Search, Menu, X,CircleUserIcon } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar(props: { className?: string | undefined }) {
@@ -42,7 +42,8 @@ export default function Navbar(props: { className?: string | undefined }) {
             className={pathname === "/" ? "text-lms-green" : ""}
           />
           <LinkComponent
-            to="/explore"
+            // to="/explore"
+            to="/dashboard"
             label="Explore"
             className={pathname === "/explore" ? "text-lms-green" : ""}
           />
@@ -64,7 +65,7 @@ export default function Navbar(props: { className?: string | undefined }) {
           <LinkComponent
             to="/login"
             label="Sign in"
-            className="!text-white rounded-lg bg-lms-green hover:bg-green-400 w-20 ml-4 md:ml-0 flex flex-row items-center justify-center p-0.5 box-border text-sm md:p-1"
+            className="!text-white rounded-lg bg-lms-green hover:bg-green-400 w-20 ml-4 md:ml-0 flex flex-row items-center justify-center p-0.5  box-border text-sm md:p-2.5 md:w-24"
           />
           {isVisible ? (
             <X

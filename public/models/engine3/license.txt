@@ -1,0 +1,11 @@
+Model Information:
+* title:	Blown 454 cid V8
+* source:	https://sketchfab.com/3d-models/blown-454-cid-v8-b7a63eeaa12d4c1d93324a4c09fc79c7
+* author:	Jorma Rysky (https://sketchfab.com/Rysky)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Blown 454 cid V8" (https://sketchfab.com/3d-models/blown-454-cid-v8-b7a63eeaa12d4c1d93324a4c09fc79c7) by Jorma Rysky (https://sketchfab.com/Rysky) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

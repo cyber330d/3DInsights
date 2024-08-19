@@ -1,0 +1,11 @@
+Model Information:
+* title:	Atom
+* source:	https://sketchfab.com/3d-models/atom-8ea2315dc6ae40a4b7c1d2eb75305d2c
+* author:	LucasPresoto (https://sketchfab.com/LucasPresoto)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Atom" (https://sketchfab.com/3d-models/atom-8ea2315dc6ae40a4b7c1d2eb75305d2c) by LucasPresoto (https://sketchfab.com/LucasPresoto) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

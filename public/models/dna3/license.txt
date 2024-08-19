@@ -1,0 +1,11 @@
+Model Information:
+* title:	B-DNA ribbon (backbone) + sticks (bases)
+* source:	https://sketchfab.com/3d-models/b-dna-ribbon-backbone-sticks-bases-84919dbce27b46309e71e75ad9c64c90
+* author:	gvsuchem (https://sketchfab.com/gvsu-chem)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "B-DNA ribbon (backbone) + sticks (bases)" (https://sketchfab.com/3d-models/b-dna-ribbon-backbone-sticks-bases-84919dbce27b46309e71e75ad9c64c90) by gvsuchem (https://sketchfab.com/gvsu-chem) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

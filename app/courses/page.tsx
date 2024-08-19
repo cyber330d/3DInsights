@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import CourseFilters from "@/app/components/courses/CourseFilters";
-import CourseSearchBar from "@/app/components/courses/CourseSearchBar";
-import CourseList from "@/app/components/courses/CourseList";
+import CourseFilters from "@/app/courses/components/CourseFilters";
+import CourseSearchBar from "@/app/courses/components/CourseSearchBar";
+import CourseList from "@/app/courses/components/CourseList";
 import { courses } from "@/app/data/db";
+import { Filter } from "lucide-react";
 
 export default function Page() {
   const [filteredCourses, setFilteredCourses] = useState(courses);
@@ -31,10 +32,10 @@ export default function Page() {
   };
 
   return (
-    <div className="flex flex-row pt-16">
+    <div className="flex flex-row scroll-smooth">
       {/* Sidebar Section */}
       {showSidebar && (
-        <div className="w-full md:w-1/4 bg-gray-100 p-4 transition-all">
+        <div className="w-full md:w-1/4 p-4 transition-all">
           <CourseFilters onFilter={filterCourses} />
         </div>
       )}
@@ -42,19 +43,20 @@ export default function Page() {
       {/* Main Content Section */}
       <div
         className={`flex-1 flex flex-col p-4 transition-all duration-300 ${
-          showSidebar ? "md:w-3/4" : "md:w-full"
+          showSidebar ? "md:w-3/4" : "md:w-full justify-center items-center"
         }`}
       >
-        {/* Toggle Button */}
-        <button
-          className="block mb-4 bg-lms-green text-white py-2 px-4 rounded-lg absolute left"
-          onClick={() => setShowSidebar(!showSidebar)}
-        >
-          {showSidebar ? "Hide Filters" : "Show Filters"}
-        </button>
-
-        {/* Search and Course List */}
-        <CourseSearchBar onSearch={searchCourses} />
+        <div className="flex flex-col sm:flex-row gap-3 justify-between w-full">
+          <CourseSearchBar onSearch={searchCourses} />
+          <button
+            className="flex bg-lms-green items-start justify-end  sm:w-1/3 self-end gap-1 text-base  mb-4 py-2 px-4 rounded  text-white max-w-28"
+            onClick={() => setShowSidebar(!showSidebar)}
+          >
+            <Filter className="text-white" />
+            Filters
+          </button>
+        </div>
+        <div className="w-full text-3xl p-4 pt-2 font-light">Courses</div>
         <CourseList courses={filteredCourses} />
       </div>
     </div>

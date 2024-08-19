@@ -19,11 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-green-50 w-full transition-all ${inter.className}`}>
+      <body
+        className={`bg-green-50 w-full scroll-smooth transition-all ${inter.className}`}
+      >
         <Header />
-        <main className="min-h-screen w-full">
-          {children}
-        </main>
+        <main className="min-h-screen w-full pt-16">{children}</main>
         <Footer />
       </body>
     </html>
