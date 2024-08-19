@@ -24,7 +24,7 @@ export default function Hero(props: { className?: string | undefined }) {
           <LinkComponent
             to="/"
             label="Get Started"
-            className="text-white w-52 rounded-lg bg-lms-green flex flex-row items-center justify-center box-border text-xs  p-3 hover:text-black "
+            className="!text-white w-52 rounded-lg bg-lms-green hover:bg-green-400 flex flex-row items-center justify-center box-border text-xs p-3  "
           />
         </div>
       </div>

@@ -180,7 +180,7 @@ export default function Footer() {
             <LinkComponent
               to="/"
               label="Getting Started"
-              className="!text-white rounded-lg bg-lms-green w-52 flex flex-row items-center justify-center -ml-1 p-2 box-border text-xs"
+              className="!text-white rounded-lg bg-lms-green hover:bg-green-400 w-52 flex flex-row items-center justify-center -ml-1 p-2 box-border text-xs"
             />
             <div className="flex gap-2 items-center justify-start">
               <Link href="/login" className="bg-black py-1 px-2 rounded">
@@ -224,19 +224,32 @@ export default function Footer() {
             FOLLOW US
           </h3>
           <div className="flex items-center justify-center gap-4 text-white">
-            <Link href="www.linkedin.com/in/erasmus-e-obeth" className="">
+            <Link
+              href="https://www.linkedin.com/in/erasmus-e-obeth"
+              className=""
+              target="_blank"
+            >
               <Linkedin className=" bg-[#0A66C2]  fill-white rounded-sm p-1" />
             </Link>
-            <Link href="https://github.com/cyber330d" className="">
-              <Twitter className="text-black  fill-white " />
+            <Link
+              href="https://www.github.com/cyber330d"
+              className=""
+              target="_blank"
+            >
+              <Twitter className="text-black  fill-white" />
             </Link>
             <Link
               href="https://www.facebook.com/profile.php?id=100064762728692"
               className=""
+              target="_blank"
             >
               <Facebook className="bg-[#0866ff]  fill-white rounded-full pt-1" />
             </Link>
-            <Link href="https://www.facebook.com/erasmus.eobeth/" className="">
+            <Link
+              href="https://www.facebook.com/erasmus.eobeth/"
+              target="_blank"
+              className=""
+            >
               <Instagram className="text-[#E4405F]  fill-white" />
             </Link>
           </div>

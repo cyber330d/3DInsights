@@ -70,7 +70,7 @@ async function onSubmit(values: z.infer<typeof formSchema>) {
       {/* form heading */}
       <div className="flex flex-col items-start gap-2">
         <h2 className="font-medium text-xl  not-italic leading-9">Login</h2>
-        <div className="font-normal text-sm text-neutral-600 not-italic leading-6">
+        <div className="font-normal text-sm not-italic leading-6">
           Welcome back continue Learning!
         </div>
       </div>
