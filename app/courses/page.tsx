@@ -35,7 +35,7 @@ export default function Page() {
     <div className="flex flex-row scroll-smooth">
       {/* Sidebar Section */}
       {showSidebar && (
-        <div className="w-full md:w-1/4 p-4 transition-all">
+        <div className="w-full md:w-1/4 p-4 transition-all hidden md:block">
           <CourseFilters onFilter={filterCourses} />
         </div>
       )}
