@@ -155,7 +155,7 @@ export default function Page() {
                   {/* </div> */}
                   Ahmadu Bello University, Zaria
                   <br />
-                  Department of Computer Science
+                  Department of Computer Engineering
                   <br />
                   Samaru Campus, Zaria
                   <br />
@@ -173,19 +173,19 @@ export default function Page() {
               {/* Action Buttons */}
               <div className="space-y-4">
                 <Link
-                  href="#get-started"
+                  href="/about#get-started"
                   className="block bg-lms-green text-center w-full p-4 text-white rounded-lg font-semibold hover:bg-green-500 transition"
                 >
                   Get Started
                 </Link>
                 <Link
-                  href="#contribute"
+                  href="/about#contribute"
                   className="block bg-lms-green text-center w-full p-4 text-white rounded-lg font-semibold hover:bg-green-500 transition"
                 >
                   Contribute
                 </Link>
                 <Link
-                  href="#sponsor"
+                  href="/about#sponsor"
                   className="block bg-lms-green text-center w-full p-4 text-white rounded-lg font-semibold hover:bg-green-500 transition"
                 >
                   Sponsor

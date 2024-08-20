@@ -89,7 +89,6 @@ export default function CourseLayout({
 
   return (
     <div className="flex">
-      {/* Sidebar */}
       <aside className="w-64 p-4 shadow-xl h-screen max-h-screen overflow-y-auto sticky top-0 bg-white">
         <h2 className="text-2xl font-bold mb-4 text-lms-green">
           Course Outline

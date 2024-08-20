@@ -2,7 +2,7 @@
 
 type TextContentProps = {
   title: string;
-  body: string;
+  body: string ;
 };
 
 export default function TextContent({ title, body }: TextContentProps) {

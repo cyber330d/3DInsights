@@ -24,27 +24,41 @@ export default function Page() {
         switch (item.type) {
           case "text":
             return (
-              <TextContent key={index} title={item.title} body={item.body} />
+              <TextContent
+                key={index}
+                title={item.title}
+                body={item.body || ""}
+              />
             );
           case "image":
             return (
               <ImageContent
                 key={index}
-                url={item.url}
+                url={item.url || ""}
                 title={item.title}
                 caption={item.caption}
               />
             );
           case "audio":
             return (
-              <AudioContent key={index} url={item.url} title={item.title} />
+              <AudioContent
+                key={index}
+                url={item.url || ""}
+                title={item.title}
+              />
             );
           case "video":
             return (
-              <VideoContent key={index} url={item.url} title={item.title} />
+              <VideoContent
+                key={index}
+                url={item.url || ""}
+                title={item.title}
+              />
             );
           case "3dmodel":
-            return <ThreeDModelViewer key={index} model={item.model} />;
+            // Provide default values for the model prop
+            const model = item.model ?? { url: "", type: "" };
+            return <ThreeDModelViewer key={index} model={model} />;
           default:
             return null;
         }
