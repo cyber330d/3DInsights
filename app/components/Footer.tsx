@@ -13,31 +13,31 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col justify-start self-stretch text-xs font-medium  gap-5 ">
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Academy
             </Link>
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Community
             </Link>
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Groups
             </Link>
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Organizations
             </Link>
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Developers
@@ -51,31 +51,31 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col justify-start self-stretch text-xs font-medium gap-5 ">
             <Link
-              href="#"
+              href="/courses"
               className=" hover:text-lms-green transition leading-4"
             >
               Courses
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Features
             </Link>
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Blogs
             </Link>
             <Link
-              href="#"
+              href="/models"
               className=" hover:text-lms-green transition leading-4"
             >
               Community
             </Link>
             <Link
-              href="#"
+              href="/register"
               className=" hover:text-lms-green transition leading-4"
             >
               Sign Up
@@ -89,31 +89,31 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col justify-start self-stretch text-xs font-semibold gap-5 ">
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               3dinsights
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Team
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Terms and Conditions
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Contact Us
@@ -127,32 +127,32 @@ export default function Footer() {
           </h3>
           <div className="flex flex-col justify-start self-stretch text-xs font-medium gap-5 ">
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Getting started
             </Link>
             <Link
-              href="#"
+              href="/login"
               className=" hover:text-lms-green transition leading-4"
             >
               FAQ
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Help Center
             </Link>
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Documentation
             </Link>
 
             <Link
-              href="#"
+              href="/about"
               className=" hover:text-lms-green transition leading-4"
             >
               Report a bug
@@ -178,7 +178,7 @@ export default function Footer() {
               <p className="flex pl-8">Ahmadu Bello Universiy, Zaria</p>
             </div>
             <LinkComponent
-              to="/"
+              to="/register"
               label="Getting Started"
               className="!text-white rounded-lg bg-lms-green hover:bg-green-400 w-52 flex flex-row items-center justify-center -ml-1 p-2 box-border text-xs"
             />

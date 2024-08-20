@@ -1,31 +1,33 @@
-import Image from "next/image";
-import LinkComponent from "./LinkComponent";
-import Link from "next/link";
+import { UserRound } from "lucide-react";
 
-export default function TestimonialCard() {
+import React from "react";
+
+interface TestimonialCardProps {
+  name: string;
+  text: string;
+  rating: number;
+}
+
+export default function TestimonialCard({
+  name,
+  text,
+  rating,
+}: TestimonialCardProps) {
+  // Generate star rating display
+  const stars = Array(5)
+    .fill("★")
+    .map((star, index) => (index < rating ? star : "☆"))
+    .join(" ");
+
   return (
-    <div className="rounded-lg shadow w-60 h-72 bg-white flex flex-col gap-4 hover:brightness-95 p-8 ">
-      <div className="image w-full flex items-center justify-between">
-        <div className="image w-12 h-12 flex items-center justify-center">
-          <Image
-            src="/h23.jpeg"
-            width="200"
-            height="200"
-            objectFit="cover"
-            alt="course name"
-            className="w-full h-full border-none  rounded-full"
-          />
-        </div>
-        <p className=" name text-base">Derek lactovokta</p>
+    <div className="rounded-lg shadow w-60 h-72 bg-white flex flex-col gap-4 hover:brightness-95 p-8">
+      <div className="flex items-center">
+        <UserRound className="w-16 h-16 text-gray-500" />
+        <p className="name text-base ml-4">{name}</p>
       </div>
 
-      <p className="text-xs">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ratione
-        adipisci inventore quia odio placeat fugiat commodi reiciendis iure?
-        Aperiam ipsum quibusdam eligendi, rem nam blanditiis. Quia voluptate
-        tempore hic?
-      </p>
-      <div className="rating">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      <p className="text-xs">{text}</p>
+      <div className="rating">{stars}</div>
     </div>
   );
 }
