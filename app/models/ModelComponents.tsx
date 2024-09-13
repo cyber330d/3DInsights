@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useInView } from "react-intersection-observer";
-import { getModelFromDB, saveModelToDB } from "@/utils/idb";
+import { getModelFromDB, saveModelToDB } from "@/lib/idb";
 import ThreeDModelViewer from "@/app/courses/components/content/ThreeDModelViewer";
 
 const ModelComponent = ({ modelUrl }) => {
