@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client"
 import { useState } from "react";
 import {
@@ -76,8 +77,7 @@ export default function Discussion() {
               {message.sender !== "You" && (
                 <>
                   {message.avatar ? (
-                    <Image
-                    
+                    <img
                       src={message.avatar}
                       alt={`${message.sender}'s avatar`}
                       className="w-8 h-8 rounded-full"
