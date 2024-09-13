@@ -5,7 +5,7 @@ export default function WhyChooseUS() {
   return (
     <div className="flex flex-col items-center justify-center self-stretch gap-12 py-10 shadow bg-green-100 w-full">
       <div className="flex flex-col items-center justify-center gap-2 sm:gap-4 text-xl leading-10">
-        <h2 className="text-center">Why Learn With Our Courses?</h2>
+        <h2 className="text-center text-black">Why Learn With Our Courses?</h2>
         <p className="text-sm text-center font-normal leading-normal px-8 text-neutral-700">
           Our courses offer a comprehensive learning experience that combines
           interactive content, expert instructors, and practical exercises to

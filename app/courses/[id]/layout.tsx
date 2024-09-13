@@ -1,7 +1,9 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import CollapsibleModule from "./CollapsibleModule";
+import { courseOutline } from "@/app/data/courseOutlineData"; // Adjust the path based on your project structure
 
 export default function CourseLayout({
   children,
@@ -10,81 +12,21 @@ export default function CourseLayout({
 }>) {
   const pathname = usePathname();
 
-  // Sample courseOutline object (can be passed as a prop)
-  const courseOutline = [
-    {
-      title: "Module 1: Introduction",
-      id: "module-1",
-      completed: true,
-      submodules: [
-        {
-          title: "Submodule 1.1: Basics",
-          id: "submodule-1-1",
-          completed: true,
-          submodules: [
-            {
-              title: "Lesson 1: Welcome",
-              id: "lesson-1",
-              completed: true,
-            },
-            {
-              title: "Lesson 2: Getting Started",
-              id: "lesson-2",
-              completed: false,
-            },
-          ],
-        },
-        {
-          title: "Submodule 1.2: Intermediate",
-          id: "submodule-1-2",
-          completed: false,
-          submodules: [
-            {
-              title: "Lesson 1: Deep Dive",
-              id: "lesson-3",
-              completed: false,
-              submodules: [
-                {
-                  title: "Case Study 1",
-                  id: "case-1",
-                  completed: false,
-                },
-                {
-                  title: "Case Study 2",
-                  id: "case-2",
-                  completed: true,
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
-      title: "Module 2: Advanced Topics",
-      id: "module-2",
-      completed: false,
-      submodules: [
-        {
-          title: "Lesson 1: Complex Concepts",
-          id: "lesson-4",
-          completed: false,
-        },
-      ],
-    },
-    {
-      title: "Module 3: Final Thoughts",
-      id: "module-3",
-      completed: false,
-    },
-  ];
-
   const tabs = [
-    { name: "About", href: `/courses/[id]/about` },
-    { name: "Course Outline", href: `/courses/[id]/outline` },
-    { name: "Resources", href: `/courses/[id]/resources` },
-    { name: "Assessments", href: `/courses/[id]/assessment` },
-    { name: "Discussion", href: `/courses/[id]/discussion` },
+    { name: "About", href: `/courses/${pathname.split("/")[2]}/` },
+    {
+      name: "Course Outline",
+      href: `/courses/${pathname.split("/")[2]}/outline`,
+    },
+    { name: "Resources", href: `/courses/${pathname.split("/")[2]}/resources` },
+    {
+      name: "Assessments",
+      href: `/courses/${pathname.split("/")[2]}/assessment`,
+    },
+    {
+      name: "Discussion",
+      href: `/courses/${pathname.split("/")[2]}/discussion`,
+    },
   ];
 
   return (
@@ -103,20 +45,18 @@ export default function CourseLayout({
       {/* Main content */}
       <div className="flex-1 p-8">
         {/* Tab navigation */}
-        <div className="mb-6 fixed z-50 w-full px-12 py-3 -ml-8  top-16 bg-green-200">
+        <div className="mb-6 fixed z-50 w-full px-12 py-3 -ml-8 top-16 bg-green-200">
           <ul className="flex space-x-6">
             {tabs.map((tab) => (
               <li
                 key={tab.name}
                 className={`pb-2 ${
-                  pathname.includes(tab.href)
-                    ? "bg-green-100 text-white"
-                    : "text-gray-700 border-b-4 border-transparent hover:border-b-lms-green hover:text-lms-green p-4 py-2 text-center flex items-center justify-center pb-3"
+                  pathname === tab.href
+                    ? "border-b-4 border-b-lms-green text-lms-green"
+                    : "text-gray-700 border-b-4 border-transparent hover:border-b-lms-green hover:text-lms-green p-4 py-2 text-center flex items-center justify-center"
                 }`}
               >
-                <Link href={tab.href.replace("[id]", pathname.split("/")[2])}>
-                  {tab.name}
-                </Link>
+                <Link href={tab.href}>{tab.name}</Link>
               </li>
             ))}
           </ul>
@@ -128,5 +68,3 @@ export default function CourseLayout({
     </div>
   );
 }
-
-

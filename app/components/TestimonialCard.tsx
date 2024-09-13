@@ -20,14 +20,14 @@ export default function TestimonialCard({
     .join(" ");
 
   return (
-    <div className="rounded-lg shadow w-60 h-72 bg-white flex flex-col gap-4 hover:brightness-95 p-8">
-      <div className="flex items-center">
-        <UserRound className="w-16 h-16 text-gray-500" />
-        <p className="name text-base ml-4">{name}</p>
+    <div className="rounded-lg shadow w-60 h-60 bg-white flex flex-col gap-4 hover:brightness-95 p-8">
+      <div className="flex items-center h-16">
+        <UserRound className="size-16 p-1 text-gray-500 rounded-full border-gray-500 border" />
+        <p className="name text-base ml-4 overflow-clip">{name}</p>
       </div>
 
-      <p className="text-xs">{text}</p>
-      <div className="rating">{stars}</div>
+      <p className="text-xs overflow-clip h-20">{text}</p>
+      <div className="rating text-lms-green">{stars}</div>
     </div>
   );
 }

@@ -43,9 +43,9 @@ export default function Navbar(props: { className?: string | undefined }) {
           />
           <LinkComponent
             // to="/explore"
-            to="/dashboard"
+            to="/models"
             label="Explore"
-            className={pathname === "/explore" ? "text-lms-green" : ""}
+            className={pathname === "/models" ? "text-lms-green" : ""}
           />
           <LinkComponent
             to="/courses"
@@ -56,6 +56,12 @@ export default function Navbar(props: { className?: string | undefined }) {
             to="/about"
             label="About"
             className={pathname === "/about" ? "text-lms-green" : ""}
+          />
+          <LinkComponent
+            // to="/explore"
+            to="/dashboard"
+            label="Dashboard"
+            className={pathname === "/dashboard" ? "text-lms-green" : ""}
           />
         </div>
 

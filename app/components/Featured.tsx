@@ -12,7 +12,7 @@ export default function Featured() {
   return (
     <div className="flex flex-col items-center justify-center self-stretch md:gap-12 gap-4 p-4 py-10 shadow bg-green-100 w-full">
       <div className="flex flex-col items-center justify-center gap-s sm:gap-4 text-xl leading-10">
-        <h2 className="">Featured Courses</h2>
+        <h2 className="text-black">Featured Courses</h2>
         <p className="text-sm text-center font-normal leading-normal text-neutral-700">
           Explore our most popular and relevant courses.
         </p>
