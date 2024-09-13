@@ -1,10 +1,16 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
-import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+// import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader";
+// import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { GLTF, GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
+
+// import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { Suspense } from "react";
 
 interface ThreeDModelViewerProps {
@@ -12,13 +18,14 @@ interface ThreeDModelViewerProps {
     url: string;
   };
 }
-
 const backgroundColors = {
   white: 0xffffff,
   grey: 0x808080,
   black: 0x000000,
   intermediate: 0x404040,
-};
+} as const;
+
+type BackgroundColorKeys = keyof typeof backgroundColors;
 
 const ThreeDModelViewer: React.FC<ThreeDModelViewerProps> = ({ model }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -87,20 +94,43 @@ const ThreeDModelViewer: React.FC<ThreeDModelViewerProps> = ({ model }) => {
         return;
     }
 
-    loader.load(
-      model.url,
-      (loadedModel) => {
-        scene.add(loadedModel.scene || loadedModel);
-        camera.position.z = 5;
-        setLoading(false); // Model loaded
-        animate();
-      },
-      undefined,
-      (error) => {
-        console.error("An error occurred while loading the model:", error);
-        setLoading(false); // Ensure loading is false on error
-      }
-    );
+    // loader.load(
+    //   model.url,
+    //   (loadedModel) => {
+    //     scene.add(loadedModel.scene || loadedModel);
+    //     camera.position.z = 5;
+    //     setLoading(false); // Model loaded
+    //     animate();
+    //   },
+    //   undefined,
+    //   (error) => {
+    //     console.error("An error occurred while loading the model:", error);
+    //     setLoading(false); // Ensure loading is false on error
+    //   }
+    // );
+   loader.load(
+     model.url,
+     (loadedModel) => {
+       // For GLTF models, check if it's of type GLTF and use the 'scene' property.
+       if ("scene" in loadedModel) {
+         scene.add((loadedModel as GLTF).scene);
+       } else {
+         // For OBJ, FBX, or other types, it's treated as a Group
+         scene.add(loadedModel as THREE.Group);
+       }
+
+       camera.position.z = 5;
+       setLoading(false); // Model loaded
+       animate();
+     },
+     undefined,
+     (error) => {
+       console.error("An error occurred while loading the model:", error);
+       setLoading(false); // Ensure loading is false on error
+     }
+   );
+
+
 
     // Animation loop
     const animate = () => {
@@ -147,10 +177,16 @@ const ThreeDModelViewer: React.FC<ThreeDModelViewerProps> = ({ model }) => {
           <button
             key={color}
             onClick={() =>
-              setBackgroundColor(new THREE.Color(backgroundColors[color]))
+              setBackgroundColor(
+                new THREE.Color(backgroundColors[color as BackgroundColorKeys])
+              )
             }
             className="p-2 rounded"
-            style={{ backgroundColor: backgroundColors[color] }}
+            style={{
+              backgroundColor: `#${backgroundColors[
+                color as BackgroundColorKeys
+              ].toString(16)}`,
+            }}
           >
             {color}
           </button>
