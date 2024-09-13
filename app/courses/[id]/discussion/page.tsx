@@ -76,7 +76,8 @@ export default function Discussion() {
               {message.sender !== "You" && (
                 <>
                   {message.avatar ? (
-                    <img
+                    <Image
+                    
                       src={message.avatar}
                       alt={`${message.sender}'s avatar`}
                       className="w-8 h-8 rounded-full"
