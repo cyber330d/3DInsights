@@ -1,11 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { getModelFromDB, saveModelToDB } from "@/lib/idb";
 import ThreeDModelViewer from "@/app/courses/components/content/ThreeDModelViewer";
 
-const ModelComponent = ({ modelUrl }) => {
+interface ModelComponentProps {
+  modelUrl: string;
+}
+
+const ModelComponent: React.FC<ModelComponentProps> = ({ modelUrl }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
-  const [modelBlob, setModelBlob] = useState(null);
+  const [modelBlob, setModelBlob] = useState<Blob | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -49,3 +53,5 @@ const ModelComponent = ({ modelUrl }) => {
 };
 
 export default ModelComponent;
+
+
