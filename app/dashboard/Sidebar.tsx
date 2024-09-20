@@ -8,9 +8,22 @@ const Sidebar = () => {
 
   return (
     <div className="h-screen w-64 shadow-2xl text-gray-700 flex flex-col fixed left-0 overflow-y-auto">
-      <div className="text-xl p-4 pt-6 px-6 font-semibold">Dashboard</div>
+      <div className="text-xl p-4 pt-6 px-6 font-semibold">
+       
+        <Link href="/dashboard">Dashboard</Link>
+      </div>
+
       <nav className="flex-1">
         <ul className="flex flex-col gap-3">
+          {/* <li
+            className={`p-4 px-6 rounded ${
+              pathname === "/dashboard"
+                ? "bg-lms-green text-white"
+                : "hover:bg-lms-green hover:opacity-80 hover:text-white"
+            }`}
+          >
+            <Link href="/dashboard">Dashboard</Link>
+          </li> */}
           <li
             className={`p-4 px-6 rounded ${
               pathname === "/dashboard/profile"
